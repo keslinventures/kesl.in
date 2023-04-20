@@ -2,16 +2,50 @@ body {
   background-color: #222;
   padding-top: 10vh;
   font-size: 12pt;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
   color: #fff;
+  padding: 8vh 28px 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 8vh);
 }
-header, main, footer {
-  margin-left: 28px;
+nav img {
+  width: 100%;
+  max-width: 500px;
+}
+nav > p {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+main {
+  flex-grow: 1;
 }
 .subtitle {
   font-size: 1.4rem;
+  font-weight: 300;
+  max-width: 800px;
+  margin-bottom: 3rem;
 }
 footer {
   font-size: 0.8rem;
-  margin-top: 20vh;
+  padding: 2rem 0;
+}
+.cols {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 800px;
+}
+.cols > div {
+  max-width: 360px;
+  margin-right: 20px;
+}
+a, a:visited, a:active {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #ccc;
 }
